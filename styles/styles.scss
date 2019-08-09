@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&text=EamonMa');
+$s: 1.2rem;
+$m: 1.6rem;
+$link: #024590;
+$link-hover: #0984e3;
+// $primary: 
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Source Serif Pro", serif;
+    width: 100%;
+}
+
+body {
+    font-size: $m;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+#app {
+    padding: $m;
+    max-width: 800px;
+    min-height: 100vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    margin: $s 0;
+}
+
+header, main, footer {
+    flex-shrink: 0
+}
+
+a, a:visited, a:active {
+    display: inline-block;
+    padding: $s/3;
+    padding-left: 0;
+    color: $link;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: $link-hover;
+}
+
+ul {
+    padding-left: $s;
+}
+
+li {
+    margin: $s/3;
+    list-style: none;
+}
